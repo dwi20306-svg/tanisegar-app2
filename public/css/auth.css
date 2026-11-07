@@ -1,0 +1,30 @@
+.auth-shell{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px}
+.auth-wrap{display:flex;width:100%;max-width:980px;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(31,77,54,.12)}
+.auth-side{flex:1;background:linear-gradient(150deg,var(--green),var(--green2));color:#fff;padding:52px;display:flex;flex-direction:column;justify-content:center}
+.auth-side .brand{font-size:24px;font-weight:700;margin-bottom:18px}
+.auth-side h2{font-size:28px;line-height:1.3;margin-bottom:12px}
+.auth-side p{opacity:.85;font-size:14px;line-height:1.6}
+.auth-form{flex:1.1;background:var(--card);padding:44px}
+.auth-form h1{font-size:24px;margin-bottom:6px}
+.auth-form .sub{color:var(--ink-soft);font-size:13.5px;margin-bottom:20px}
+.auth-form .btn{width:100%;padding:13px;font-size:14px;margin-top:6px}
+.switch-line{text-align:center;margin-top:18px;font-size:13px;color:var(--ink-soft)}
+.switch-line a{color:var(--green2);font-weight:600}
+
+.role-pick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.role-pick > div{position:relative}
+.role-pick input{position:absolute;opacity:0;pointer-events:none}
+.role-card{display:block;border:1.5px solid var(--line);border-radius:14px;padding:14px 8px;cursor:pointer;text-align:center;background:var(--cream)}
+.role-card .e{font-size:24px}
+.role-card b{display:block;font-size:13.5px;margin-top:4px}
+.role-card span{font-size:11px;color:var(--ink-soft)}
+.role-pick input:checked + .role-card{border-color:var(--green);background:#E4F1E8}
+.role-pick input:focus-visible + .role-card{outline:2px solid var(--green2);outline-offset:2px}
+
+@media (max-width:760px){.auth-side{display:none}}
+
+/* khusus halaman daftar: 2 kartu role */
+.role-pick.dua{grid-template-columns:1fr 1fr}
+
+.notice{background:#FFF1DA;color:#7A4A12;border-radius:10px;padding:10px 14px;font-size:12.5px;margin-bottom:16px;line-height:1.5}
+.auth-form .btn{width:100%;padding:13px;font-size:14px;margin-top:6px}
